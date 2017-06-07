@@ -7,4 +7,5 @@ def removeDirectory(path):
        removeDirectory(i)
     else:
       i.unlink()
+  # NOTE: can replace above lines with `removeConents(path)` scrap form pathlib-recursive-remove-contents 
   path.rmdir()
