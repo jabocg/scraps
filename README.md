@@ -13,7 +13,20 @@
 
 
 ## Python
-#### Incremental String Builder [*](https://github.com/jabocg/scraps/blob/master/python/incremental-string-builder)
+
+#### Incremental String Builder [*](https://github.com/jabocg/scraps/blob/master/python/incremental-string-builder.py)
 ```python
 [string[:i] for i in range(1, len(string))]
+```
+
+#### File copy via `pathlib` [*](https://github.com/jabocg/scraps/blob/master/python/pathlib-file-copy.py)
+```python
+import pathlib
+
+source = Path(...)
+dest = Path(...)
+
+with source.open() as i:
+  with dest.open(mode='w') as o:
+    o.write(i.read())
 ```
