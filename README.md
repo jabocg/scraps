@@ -3,6 +3,13 @@
 
 ## Table of Contents
 ### Python
-* [list comprehension building a string incrementally](#string-inc-build)
+* [list comprehension building a string incrementally](#incremental-string-builder)
 ### Java
 ### C#
+
+
+## Python
+### Incremental String Builder
+```python
+[string[:i] for i in range(1, len(string))]
+```
