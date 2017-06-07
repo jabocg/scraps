@@ -13,7 +13,7 @@
 
 
 ## Python
-##### Incremental String Builder
+##### Incremental String Builder [*](https://github.com/jabocg/scraps/python/incremental-string-builder.py)
 ```python
 [string[:i] for i in range(1, len(string))]
 ```
