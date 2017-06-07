@@ -34,7 +34,7 @@ def copyFile(source, dest):
       o.write(i.read())
 ```
 
-#### Delete Contents via `pathlib` [*](https://github.com/jabocg/scraps/blob/master/python/pathlib-recursive-delete-contents.py
+#### Delete Contents via `pathlib` [*](https://github.com/jabocg/scraps/blob/master/python/pathlib-recursive-delete-contents.py)
 ```python
 import pathlib
 
@@ -49,7 +49,7 @@ def deleteContents(path):
       i.unlink()
 ```
 
-#### Delete Directory(and contents) via `pathlib` [*](https://github.com/jabocg/scraps/blob/master/python/pathlib-recursive-delete-directory.py
+#### Delete Directory(and contents) via `pathlib` [*](https://github.com/jabocg/scraps/blob/master/python/pathlib-recursive-delete-directory.py)
 ```python
 mport pathlib
 
