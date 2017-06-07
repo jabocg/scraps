@@ -17,12 +17,12 @@
 
 ## Python
 
-#### Incremental String Builder [§](https://github.com/jabocg/scraps/blob/master/python/incremental-string-builder.py)
+#### Incremental String Builder [>](https://github.com/jabocg/scraps/blob/master/python/incremental-string-builder.py)
 ```python
 [string[:i] for i in range(1, len(string))]
 ```
 
-#### File Copy via `pathlib` [§](https://github.com/jabocg/scraps/blob/master/python/pathlib-copy-file.py)
+#### File Copy via `pathlib` [>>](https://github.com/jabocg/scraps/blob/master/python/pathlib-copy-file.py)
 ```python
 import pathlib
 
@@ -34,7 +34,7 @@ def copyFile(source, dest):
       o.write(i.read())
 ```
 
-#### Delete Contents via `pathlib` [§](https://github.com/jabocg/scraps/blob/master/python/pathlib-recursive-delete-contents.py)
+#### Delete Contents via `pathlib` [>>>](https://github.com/jabocg/scraps/blob/master/python/pathlib-recursive-delete-contents.py)
 ```python
 import pathlib
 
