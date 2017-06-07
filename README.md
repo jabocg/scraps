@@ -3,10 +3,10 @@
 
 ## Table of Contents
 ### Python
-* [list comprehension building a string incrementally](#incremental-string-builder)
-* [copy file using pathlib](#file-copy-via-pathlib)
-* [recursively delete directory contents using pathlib](#pathlib-recursive-delete-contents)
-* [recursively delete directory(and its contents)](#pathlib-recursive-delete-directory)
+* [list comprehension building a string incrementally](#incremental-string-builder-link)
+* [copy file using pathlib](#file-copy-via-pathlib-link)
+* [recursively delete directory contents using pathlib](#delete-contents-via-pathlib-link)
+* [recursively delete directory(and its contents)](#delete-directory-and-contents-via-pathlib-link)
 ### Java
 ### C#
 
