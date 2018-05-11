@@ -8,8 +8,7 @@
 * [recursively delete directory contents using pathlib](#delete-contents-via-pathlib-link)
 * [recursively delete directory(and its contents)](#delete-directory-and-contents-via-pathlib-link)
 * [compare simple versions](#compare-simple-versions-link)
-### Java
-### C#
+* [simplify units(floored)](#simplify-units-floored-link)
 
 <br>
 <hr>
@@ -123,4 +122,46 @@ def comp_ver_rec(v1, v2):
             return 0
         # ver1 and ver2 have the same part, but they have more, so we check
         return comp_ver_rec(v1[1:], v2[1:])
+```
+
+
+#### Simplify Units(Floored) [[link](https://github.com/jabocg/scraps/blob/master/python/simplify-units-floored.py)]
+```python
+UNITS_TIME = {
+              u'types': [u'seconds',
+                         u'minutes',
+                         u'hours',
+                         u'days',
+                         u'weeks',
+                         u'months',
+                         u'years'],
+              u'factors': {
+                  u'minutes': 60,
+                  u'hours': 60,
+                  u'days': 24,
+                  u'weeks': 7,
+                  u'months': 4,
+                  u'years': 12
+               }
+              }
+              
+def simplify_units(units, unit_type, rules=UNITS_TIME):
+    u"""Return the smallest number of the biggest value units for the unit.
+
+    Rules Definition:
+        The unit_rules is a dictionary with the following schema:
+            types: a list value with all values in ascending order
+            factors: a dict with all keys being unit types and values being the
+                     number of the next smallest units to make one of this unit
+
+    Arguments:
+        units -- (int) number of units
+        unit_type -- (unicode) type of units
+        rules -- (dict) rules for units; see "Rules Definition" above
+
+    Returns:
+        int, unicode -- number and type of units, simplified
+
+    """
+    return _simplify_units_rec(units, rules[u'types'].index(unit_type), rules)
 ```
